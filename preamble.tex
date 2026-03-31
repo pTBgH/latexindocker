@@ -19,6 +19,8 @@
 %======================================================================
 % 2. CANH LỀ VÀ LAYOUT TRANG
 %======================================================================
+\usepackage[document]{ragged2e}
+
 % Gói geometry để tùy chỉnh lề
 \usepackage[top=3cm, bottom=3cm, left=3.5cm, right=2cm, heightrounded, headheight=15pt]{geometry}
 
@@ -105,8 +107,9 @@
 % biblatex là gói quản lý tài liệu tham khảo hiện đại và mạnh mẽ
 \usepackage[
     backend=biber,      % Sử dụng biber (mạnh hơn bibtex)
-    style=numeric,      % Kiểu trích dẫn [1], [2]
-    sorting=none,       % Không sắp xếp, giữ nguyên thứ tự trong file .bib
+    style=authoryear,          % Kiểu trích dẫn APA (Author-Year)
+    citestyle=authoryear, % Tác giả-Năm
+    sorting=nyt,        % Sắp xếp theo Name-Year-Title
     giveninits=true     % Tên tác giả chỉ viết tắt (e.g., "D. E. Knuth")
 ]{biblatex}
 \addbibresource{bibliography.bib} % Tên file .bib của bạn

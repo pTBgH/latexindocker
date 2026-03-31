@@ -1,0 +1,190 @@
+% !TEX encoding = UTF-8
+% ============================================================
+% CHƯƠNG 1: TỔNG QUAN - TEMPLATE
+% ============================================================
+% Hướng dẫn: 
+% - Thay thế [NỘI DUNG] bằng nội dung thực tế
+% - Xóa các phần không cần thiết
+% - Giữ lại cấu trúc và ví dụ
+% ============================================================
+
+\chapter{Tổng quan}
+
+% ============================================================
+\section{Đặt vấn đề}
+% ============================================================
+
+[VĂN BẢN GIỚI THIỆU VẤN ĐỀ CHÍNH: Bối cảnh, tại sao vấn đề này quan trọng, 
+những nỗ lực hiện tại và giới hạn của chúng. ]
+
+Trích dẫn ví dụ: \textcite{tac_gia_sach_2024} cho rằng [NỘI DUNG VĂN BẢN].
+
+\subsection{Vấn đề con 1}
+[MÔ TẢ CHI TIẾT VẤN ĐỀ CON 1]
+
+\subsection{Vấn đề con 2}
+[MÔ TẢ CHI TIẾT VẤN ĐỀ CON 2]
+
+% ============================================================
+\section{Mục tiêu và phạm vi}
+% ============================================================
+
+\subsection{Mục tiêu chính}
+\begin{itemize}
+    \item [MỤC TIÊU 1]
+    \item [MỤC TIÊU 2]
+    \item [MỤC TIÊU 3]
+\end{itemize}
+
+\subsection{Phạm vi nghiên cứu}
+\begin{itemize}
+    \item [PHẠM VI 1]
+    \item [PHẠM VI 2]
+    \item [PHẠM VI 3]
+\end{itemize}
+
+% ============================================================
+\section{Tổng quan về Lĩnh vực Chính}
+% ============================================================
+
+[VĂN BẢN GIỚI THIỆU LĨ̀NH VỰC CHÍNH]
+
+\subsection{Khái niệm 1}
+
+[MÔ TẢ CHI TIẾT VỀ KHÁI NIỆM 1]
+
+% Ví dụ công thức toán học
+Ví dụ công thức:
+\begin{equation}
+    y = mx + b
+    \label{eq:linear}
+\end{equation}
+
+Như trong Phương trình \eqref{eq:linear}, [GIẢI THÍCH].
+
+\subsection{Khái niệm 2}
+
+[MÔ TẢ CHI TIẾT VỀ KHÁI NIỆM 2]
+
+% ============================================================
+% VÍ DỤ 1: CHÈN HÌNH ẢNH ĐƠN
+% ============================================================
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/[TEN_FILE].png}
+    \caption{Tiêu đề hình này là gì. Nguồn: \cite{tac_gia_sach_2024}}
+    \label{fig:example_figure}
+\end{figure}
+
+Như thể hiện trong Hình \ref{fig:example_figure}, [GIẢI THÍCH HÌNH ẢNH].
+
+% ============================================================
+% VÍ DỤ 2: CHÈN NHIỀU HÌNH (SUBFIGURES)
+% ============================================================
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{images/[TEN_FILE_1].png}
+        \caption{Hình con 1}
+        \label{fig:subfig1}
+    \end{subfigure}
+    \quad
+    \begin{subfigure}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{images/[TEN_FILE_2].png}
+        \caption{Hình con 2}
+        \label{fig:subfig2}
+    \end{subfigure}
+    \caption{So sánh giữa hai phương pháp. Nguồn: \cite{conference_2024}}
+    \label{fig:subfigures}
+\end{figure}
+
+% ============================================================
+% VÍ DỤ 3: CHÈN BẢNG BIỂU
+% ============================================================
+\subsection{Khái niệm 3}
+
+[MÔ TẢ CHI TIẾT VỀ KHÁI NIỆM 3]
+
+\begin{table}[H]
+    \centering
+    \caption{Tiêu đề bảng}
+    \label{tab:example_table}
+    \begin{tabular}{|l|c|r|}
+        \hline
+        \textbf{Cột 1} & \textbf{Cột 2} & \textbf{Cột 3} \\
+        \hline
+        Dữ liệu 1 & 10 & 100 \\
+        Dữ liệu 2 & 20 & 200 \\
+        Dữ liệu 3 & 30 & 300 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Từ Bảng \ref{tab:example_table}, ta thấy rằng [GIẢI THÍCH BẢNG].
+
+% ============================================================
+% VÍ DỤ 4: CHÈN BẢNG PHỨC TẠP
+% ============================================================
+\begin{table}[H]
+    \centering
+    \caption{So sánh các phương pháp}
+    \label{tab:comparison}
+    \begin{tabularx}{\textwidth}{|l|X|X|X|}
+        \hline
+        \textbf{Tiêu chí} & \textbf{Phương pháp A} & \textbf{Phương pháp B} & \textbf{Phương pháp C} \\
+        \hline
+        Hiệu suất & Cao & Trung bình & Thấp \\
+        Chi phí & Cao & Trung bình & Thấp \\
+        Độ phức tạp & Cao & Trung bình & Thấp \\
+        \hline
+    \end{tabularx}
+\end{table}
+
+% ============================================================
+% VÍ DỤ 5: CHÈN MÃ NGUỒN (CODE)
+% ============================================================
+\subsection{Khái niệm 4}
+
+[MÔ TẢ CHI TIẾT VỀ KHÁI NIỆM 4]
+
+Ví dụ mã nguồn Python:
+\begin{minted}{python}
+def hello_world():
+    print("Hello, World!")
+    return True
+
+if __name__ == "__main__":
+    hello_world()
+\end{minted}
+
+Ví dụ mã nguồn JavaScript:
+\begin{minted}{javascript}
+const greet = (name) => {
+    console.log(`Hello, ${name}!`);
+};
+
+greet("World");
+\end{minted}
+
+% ============================================================
+\section{Đóng góp của nghiên cứu}
+% ============================================================
+
+\begin{enumerate}
+    \item [ĐÓNG GÓP 1: Mô tả chi tiết]
+    \item [ĐÓNG GÓP 2: Mô tả chi tiết]
+    \item [ĐÓNG GÓP 3: Mô tả chi tiết]
+\end{enumerate}
+
+% ============================================================
+\section{Cấu trúc của đồ án}
+% ============================================================
+
+Đồ án được tổ chức như sau:
+
+\begin{itemize}
+    \item \textbf{Chương 1 - Tổng quan:} Giới thiệu vấn đề, mục tiêu và phạm vi nghiên cứu
+    \item \textbf{Chương 2 - [Tiêu đề chương 2]:} [Mô tả nội dung chương 2]
+    \item \textbf{Chương 3 - [Tiêu đề chương 3]:} [Mô tả nội dung chương 3]
+    \item \textbf{Chương 4 - Kết luận:} Tổng kết, đóng góp và hướng phát triển trong tương lai
+\end{itemize}
